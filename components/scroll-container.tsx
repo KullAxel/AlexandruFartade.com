@@ -10,7 +10,7 @@ import { ExternalLink } from "lucide-react";
 
 interface ScrollContainerProps {}
 
-const WORDS = ["empowering", "streamlining", "integrating", "automating", "delivering", "mastering"];
+const WORDS = ["Builds Bridges", "Delivers Efficiency", "Innovates with AI", "Automates with Precision", "Earns Trust", "Leads with Knowledge"];
 
 const ScrollContainer = ({}: ScrollContainerProps) => {
   useFaviconAnimation();
@@ -21,12 +21,12 @@ const ScrollContainer = ({}: ScrollContainerProps) => {
     <div className="relative w-full md:mb-[200px] max-w-screen flex flex-col items-center">
       <div className="relative">
         <div className="sticky z-20 top-[33vh] left-0 pl-4 md:pl-0 translate-x-0 lg:translate-x-[100px] md:translate-x-[130px] max-w-[792px] w-full flex justify-center">
-          <div className="flex gap-1.5 md:gap-4 relative md:-translate-x-[230px] w-full text-[22px] md:text-[32px] font-semibold items-baseline left-0 ">
+          <div className="flex flex-col md:flex-row gap-1.5 md:gap-4 relative md:-translate-x-[100px] w-full text-[22px] md:text-[32px] font-semibold md:items-baseline items-start left-0 ">
             <div className="flex md:gap-4 gap-1.5 items-baseline">
               Alexandru{" "}
-              <span className="opacity-50 text-lg md:text-[22px]">is...</span>{" "}
+              <span className="opacity-50 text-lg md:text-[22px]">...</span>{" "}
             </div>
-            <div className="relative leading-normal h-[22px] md:h-[33px]">
+            <div className="relative leading-normal h-[22px] md:h-[33px] md:mt-0 mt-1">
               <div>
                 <div className="absolute h-full flex whitespace-nowrap top-0 left-0 ">
                   <div>

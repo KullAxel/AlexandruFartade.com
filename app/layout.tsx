@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import Nav from "@/components/nav";
 import { Analytics } from "@vercel/analytics/react"
 import ogImage from "./opengraph-image.png";
+import { StagewiseToolbar } from "@stagewise/toolbar-next";
 
 export const metadata: Metadata = {
   title: "Alexandru Fartade",
@@ -21,6 +22,10 @@ export const metadata: Metadata = {
       },
     ],
   },
+};
+
+const stagewiseConfig = {
+  plugins: []
 };
 
 export default async function RootLayout({
@@ -40,6 +45,7 @@ export default async function RootLayout({
           <Footer />
         </ThemeProvider>
         <Analytics />
+        {process.env.NODE_ENV === 'development' && <StagewiseToolbar config={stagewiseConfig} />}
       </body>
     </html>
   );
